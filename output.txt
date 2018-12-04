@@ -1,0 +1,860 @@
+nohup: ignoring input
+Configurations:
+                cuda: True
+              epochs: 64
+       learning_rate: 0.001
+          batch_size: 32
+      regularization: 0.0005
+                nCls: 40
+                 Fin: 3
+             dropout: 0.5
+      negative_slope: 0.2
+      lr_shrink_rate: 0.8
+              lr_min: 1e-05
+                   N: 1024
+                   k: 20
+             workers: 1
+          print_freq: 50
+
+==> Creating dataset <train>:
+    data: (9840, 3, 1024) float32
+    labels: (9840,) int64
+==> Dataset Created
+==> Creating dataset <test>:
+    data: (2468, 3, 1024) float32
+    labels: (2468,) int64
+==> Dataset Created
+==> Train Epoch 0
+/opt/anaconda3/lib/python3.6/site-packages/h5py/__init__.py:36: FutureWarning: Conversion of the second argument of issubdtype from `float` to `np.floating` is deprecated. In future, it will be treated as `np.float64 == np.dtype(float).type`.
+  from ._conv import register_converters as _register_converters
+    training batch 1/308: acc 0.03, time 0.52s
+    training batch 51/308: acc 0.41, time 0.26s
+    training batch 101/308: acc 0.34, time 0.26s
+    training batch 151/308: acc 0.50, time 0.26s
+    training batch 201/308: acc 0.62, time 0.26s
+    training batch 251/308: acc 0.66, time 0.26s
+    training batch 301/308: acc 0.59, time 0.26s
++=> Epoch   0: Accuracy 0.4637, Loss 829.16, Time 80.60s
+==> Test Epoch 0
+    testing batch 1/78: acc 0.50, time 0.23s
+    testing batch 51/78: acc 0.75, time 0.13s
+++> Test Epoch   0: Accuracy 0.5766 (1423/2468), Time 10.27s
+==> Train Epoch 1
+    training batch 1/308: acc 0.69, time 0.36s
+    training batch 51/308: acc 0.75, time 0.26s
+    training batch 101/308: acc 0.72, time 0.26s
+    training batch 151/308: acc 0.78, time 0.26s
+    training batch 201/308: acc 0.75, time 0.26s
+    training batch 251/308: acc 0.66, time 0.26s
+    training batch 301/308: acc 0.81, time 0.26s
++=> Epoch   1: Accuracy 0.6706, Loss 603.29, Time 80.66s
+==> Test Epoch 1
+    testing batch 1/78: acc 0.62, time 0.23s
+    testing batch 51/78: acc 0.59, time 0.13s
+++> Test Epoch   1: Accuracy 0.6329 (1562/2468), Time 10.27s
+==> Train Epoch 2
+    training batch 1/308: acc 0.72, time 0.37s
+    training batch 51/308: acc 0.78, time 0.26s
+    training batch 101/308: acc 0.72, time 0.26s
+    training batch 151/308: acc 0.62, time 0.26s
+    training batch 201/308: acc 0.62, time 0.26s
+    training batch 251/308: acc 0.59, time 0.26s
+    training batch 301/308: acc 0.84, time 0.26s
++=> Epoch   2: Accuracy 0.7346, Loss 474.72, Time 80.65s
+==> Test Epoch 2
+    testing batch 1/78: acc 0.75, time 0.22s
+    testing batch 51/78: acc 0.81, time 0.13s
+++> Test Epoch   2: Accuracy 0.7370 (1819/2468), Time 10.24s
+==> Train Epoch 3
+    training batch 1/308: acc 0.88, time 0.34s
+    training batch 51/308: acc 0.81, time 0.26s
+    training batch 101/308: acc 0.66, time 0.26s
+    training batch 151/308: acc 0.88, time 0.26s
+    training batch 201/308: acc 0.81, time 0.26s
+    training batch 251/308: acc 0.78, time 0.26s
+    training batch 301/308: acc 0.91, time 0.26s
++=> Epoch   3: Accuracy 0.7731, Loss 389.81, Time 80.67s
+==> Test Epoch 3
+    testing batch 1/78: acc 0.75, time 0.22s
+    testing batch 51/78: acc 0.72, time 0.13s
+++> Test Epoch   3: Accuracy 0.7767 (1917/2468), Time 10.23s
+==> Train Epoch 4
+    training batch 1/308: acc 0.72, time 0.34s
+    training batch 51/308: acc 0.94, time 0.26s
+    training batch 101/308: acc 0.69, time 0.26s
+    training batch 151/308: acc 0.97, time 0.26s
+    training batch 201/308: acc 0.75, time 0.26s
+    training batch 251/308: acc 0.84, time 0.26s
+    training batch 301/308: acc 0.75, time 0.26s
++=> Epoch   4: Accuracy 0.8008, Loss 338.89, Time 80.72s
+==> Test Epoch 4
+    testing batch 1/78: acc 0.66, time 0.27s
+    testing batch 51/78: acc 0.81, time 0.13s
+++> Test Epoch   4: Accuracy 0.7808 (1927/2468), Time 10.29s
+==> Train Epoch 5
+    training batch 1/308: acc 0.72, time 0.34s
+    training batch 51/308: acc 0.81, time 0.26s
+    training batch 101/308: acc 0.88, time 0.26s
+    training batch 151/308: acc 0.91, time 0.26s
+    training batch 201/308: acc 0.69, time 0.26s
+    training batch 251/308: acc 0.78, time 0.26s
+    training batch 301/308: acc 0.91, time 0.26s
++=> Epoch   5: Accuracy 0.8177, Loss 296.33, Time 80.68s
+==> Test Epoch 5
+    testing batch 1/78: acc 0.72, time 0.22s
+    testing batch 51/78: acc 0.78, time 0.13s
+++> Test Epoch   5: Accuracy 0.8075 (1993/2468), Time 10.24s
+==> Train Epoch 6
+    training batch 1/308: acc 0.72, time 0.36s
+    training batch 51/308: acc 0.88, time 0.26s
+    training batch 101/308: acc 0.91, time 0.26s
+    training batch 151/308: acc 0.75, time 0.26s
+    training batch 201/308: acc 0.84, time 0.26s
+    training batch 251/308: acc 0.84, time 0.26s
+    training batch 301/308: acc 0.88, time 0.26s
++=> Epoch   6: Accuracy 0.8313, Loss 267.03, Time 80.68s
+==> Test Epoch 6
+    testing batch 1/78: acc 0.88, time 0.22s
+    testing batch 51/78: acc 0.88, time 0.13s
+++> Test Epoch   6: Accuracy 0.8282 (2044/2468), Time 10.25s
+==> Train Epoch 7
+    training batch 1/308: acc 0.81, time 0.38s
+    training batch 51/308: acc 0.88, time 0.26s
+    training batch 101/308: acc 0.78, time 0.26s
+    training batch 151/308: acc 0.84, time 0.26s
+    training batch 201/308: acc 0.84, time 0.26s
+    training batch 251/308: acc 0.91, time 0.26s
+    training batch 301/308: acc 0.91, time 0.26s
++=> Epoch   7: Accuracy 0.8394, Loss 252.30, Time 80.75s
+==> Test Epoch 7
+    testing batch 1/78: acc 0.81, time 0.27s
+    testing batch 51/78: acc 0.84, time 0.13s
+++> Test Epoch   7: Accuracy 0.8250 (2036/2468), Time 10.29s
+==> Train Epoch 8
+    training batch 1/308: acc 0.91, time 0.36s
+    training batch 51/308: acc 0.78, time 0.26s
+    training batch 101/308: acc 0.91, time 0.26s
+    training batch 151/308: acc 0.84, time 0.26s
+    training batch 201/308: acc 0.91, time 0.26s
+    training batch 251/308: acc 0.81, time 0.26s
+    training batch 301/308: acc 0.78, time 0.26s
++=> Epoch   8: Accuracy 0.8496, Loss 235.90, Time 80.67s
+==> Test Epoch 8
+    testing batch 1/78: acc 0.91, time 0.21s
+    testing batch 51/78: acc 0.81, time 0.13s
+++> Test Epoch   8: Accuracy 0.8217 (2028/2468), Time 10.23s
+==> Train Epoch 9
+    training batch 1/308: acc 0.75, time 0.34s
+    training batch 51/308: acc 0.84, time 0.26s
+    training batch 101/308: acc 0.91, time 0.26s
+    training batch 151/308: acc 0.84, time 0.26s
+    training batch 201/308: acc 0.81, time 0.26s
+    training batch 251/308: acc 0.84, time 0.26s
+    training batch 301/308: acc 0.84, time 0.26s
++=> Epoch   9: Accuracy 0.8541, Loss 224.80, Time 80.71s
+==> Test Epoch 9
+    testing batch 1/78: acc 0.69, time 0.22s
+    testing batch 51/78: acc 0.91, time 0.13s
+++> Test Epoch   9: Accuracy 0.8116 (2003/2468), Time 10.25s
+==> Train Epoch 10
+    training batch 1/308: acc 0.88, time 0.38s
+    training batch 51/308: acc 0.84, time 0.26s
+    training batch 101/308: acc 0.84, time 0.26s
+    training batch 151/308: acc 0.91, time 0.26s
+    training batch 201/308: acc 0.81, time 0.26s
+    training batch 251/308: acc 0.78, time 0.26s
+    training batch 301/308: acc 0.66, time 0.26s
++=> Epoch  10: Accuracy 0.8602, Loss 204.43, Time 80.64s
+==> Test Epoch 10
+    testing batch 1/78: acc 0.78, time 0.23s
+    testing batch 51/78: acc 0.88, time 0.13s
+++> Test Epoch  10: Accuracy 0.8497 (2097/2468), Time 10.26s
+==> Train Epoch 11
+    training batch 1/308: acc 0.88, time 0.34s
+    training batch 51/308: acc 0.84, time 0.26s
+    training batch 101/308: acc 0.72, time 0.26s
+    training batch 151/308: acc 0.84, time 0.26s
+    training batch 201/308: acc 0.75, time 0.26s
+    training batch 251/308: acc 0.88, time 0.26s
+    training batch 301/308: acc 0.84, time 0.26s
++=> Epoch  11: Accuracy 0.8674, Loss 194.28, Time 80.54s
+==> Test Epoch 11
+    testing batch 1/78: acc 0.81, time 0.22s
+    testing batch 51/78: acc 0.84, time 0.13s
+++> Test Epoch  11: Accuracy 0.8493 (2096/2468), Time 10.25s
+==> Train Epoch 12
+    training batch 1/308: acc 0.81, time 0.36s
+    training batch 51/308: acc 0.91, time 0.26s
+    training batch 101/308: acc 0.94, time 0.26s
+    training batch 151/308: acc 0.94, time 0.26s
+    training batch 201/308: acc 0.88, time 0.26s
+    training batch 251/308: acc 0.94, time 0.26s
+    training batch 301/308: acc 0.84, time 0.26s
++=> Epoch  12: Accuracy 0.8691, Loss 190.23, Time 80.54s
+==> Test Epoch 12
+    testing batch 1/78: acc 0.97, time 0.23s
+    testing batch 51/78: acc 0.91, time 0.13s
+++> Test Epoch  12: Accuracy 0.8622 (2128/2468), Time 10.25s
+==> Train Epoch 13
+    training batch 1/308: acc 0.88, time 0.36s
+    training batch 51/308: acc 0.91, time 0.26s
+    training batch 101/308: acc 0.97, time 0.26s
+    training batch 151/308: acc 0.91, time 0.26s
+    training batch 201/308: acc 0.84, time 0.26s
+    training batch 251/308: acc 0.91, time 0.26s
+    training batch 301/308: acc 0.88, time 0.26s
++=> Epoch  13: Accuracy 0.8788, Loss 179.98, Time 80.56s
+==> Test Epoch 13
+    testing batch 1/78: acc 0.94, time 0.23s
+    testing batch 51/78: acc 0.88, time 0.13s
+++> Test Epoch  13: Accuracy 0.8517 (2102/2468), Time 10.26s
+==> Train Epoch 14
+    training batch 1/308: acc 0.94, time 0.37s
+    training batch 51/308: acc 0.94, time 0.26s
+    training batch 101/308: acc 0.81, time 0.26s
+    training batch 151/308: acc 0.91, time 0.26s
+    training batch 201/308: acc 0.84, time 0.26s
+    training batch 251/308: acc 0.66, time 0.26s
+    training batch 301/308: acc 0.94, time 0.26s
++=> Epoch  14: Accuracy 0.8758, Loss 177.63, Time 80.53s
+==> Test Epoch 14
+    testing batch 1/78: acc 0.88, time 0.23s
+    testing batch 51/78: acc 0.91, time 0.13s
+++> Test Epoch  14: Accuracy 0.8290 (2046/2468), Time 10.26s
+==> Train Epoch 15
+    training batch 1/308: acc 0.91, time 0.34s
+    training batch 51/308: acc 0.91, time 0.26s
+    training batch 101/308: acc 0.91, time 0.26s
+    training batch 151/308: acc 0.88, time 0.26s
+    training batch 201/308: acc 0.84, time 0.26s
+    training batch 251/308: acc 0.91, time 0.26s
+    training batch 301/308: acc 0.78, time 0.26s
++=> Epoch  15: Accuracy 0.8868, Loss 162.91, Time 80.48s
+==> Test Epoch 15
+    testing batch 1/78: acc 0.84, time 0.21s
+    testing batch 51/78: acc 0.81, time 0.13s
+++> Test Epoch  15: Accuracy 0.8420 (2078/2468), Time 10.25s
+==> Train Epoch 16
+    training batch 1/308: acc 0.91, time 0.39s
+    training batch 51/308: acc 0.91, time 0.26s
+    training batch 101/308: acc 0.91, time 0.26s
+    training batch 151/308: acc 0.91, time 0.26s
+    training batch 201/308: acc 0.88, time 0.26s
+    training batch 251/308: acc 0.97, time 0.26s
+    training batch 301/308: acc 0.97, time 0.26s
++=> Epoch  16: Accuracy 0.8917, Loss 160.27, Time 80.69s
+==> Test Epoch 16
+    testing batch 1/78: acc 0.94, time 0.26s
+    testing batch 51/78: acc 1.00, time 0.13s
+++> Test Epoch  16: Accuracy 0.8578 (2117/2468), Time 10.30s
+==> Train Epoch 17
+    training batch 1/308: acc 0.88, time 0.36s
+    training batch 51/308: acc 0.94, time 0.26s
+    training batch 101/308: acc 0.94, time 0.26s
+    training batch 151/308: acc 0.94, time 0.26s
+    training batch 201/308: acc 0.84, time 0.26s
+    training batch 251/308: acc 0.94, time 0.26s
+    training batch 301/308: acc 0.97, time 0.26s
++=> Epoch  17: Accuracy 0.8902, Loss 158.20, Time 80.48s
+==> Test Epoch 17
+    testing batch 1/78: acc 0.75, time 0.35s
+    testing batch 51/78: acc 0.91, time 0.13s
+++> Test Epoch  17: Accuracy 0.8602 (2123/2468), Time 10.39s
+==> Train Epoch 18
+    training batch 1/308: acc 0.91, time 0.36s
+    training batch 51/308: acc 0.94, time 0.26s
+    training batch 101/308: acc 0.88, time 0.26s
+    training batch 151/308: acc 0.94, time 0.26s
+    training batch 201/308: acc 0.84, time 0.26s
+    training batch 251/308: acc 0.91, time 0.26s
+    training batch 301/308: acc 0.94, time 0.26s
++=> Epoch  18: Accuracy 0.8922, Loss 153.06, Time 80.48s
+==> Test Epoch 18
+    testing batch 1/78: acc 0.88, time 0.36s
+    testing batch 51/78: acc 0.91, time 0.13s
+++> Test Epoch  18: Accuracy 0.8553 (2111/2468), Time 10.40s
+==> Train Epoch 19
+    training batch 1/308: acc 0.97, time 0.48s
+    training batch 51/308: acc 0.88, time 0.26s
+    training batch 101/308: acc 0.91, time 0.26s
+    training batch 151/308: acc 0.84, time 0.26s
+    training batch 201/308: acc 0.91, time 0.26s
+    training batch 251/308: acc 0.97, time 0.26s
+    training batch 301/308: acc 0.94, time 0.26s
++=> Epoch  19: Accuracy 0.8933, Loss 148.81, Time 80.72s
+==> Test Epoch 19
+    testing batch 1/78: acc 0.75, time 0.27s
+    testing batch 51/78: acc 0.81, time 0.13s
+++> Test Epoch  19: Accuracy 0.8367 (2065/2468), Time 10.29s
+==> Train Epoch 20
+    training batch 1/308: acc 0.91, time 0.36s
+    training batch 51/308: acc 0.97, time 0.26s
+    training batch 101/308: acc 0.91, time 0.26s
+    training batch 151/308: acc 0.88, time 0.26s
+    training batch 201/308: acc 0.88, time 0.26s
+    training batch 251/308: acc 0.88, time 0.26s
+    training batch 301/308: acc 0.88, time 0.26s
++=> Epoch  20: Accuracy 0.9034, Loss 141.71, Time 80.45s
+==> Test Epoch 20
+    testing batch 1/78: acc 0.81, time 0.21s
+    testing batch 51/78: acc 0.88, time 0.13s
+++> Test Epoch  20: Accuracy 0.8497 (2097/2468), Time 10.23s
+==> Train Epoch 21
+    training batch 1/308: acc 0.84, time 0.36s
+    training batch 51/308: acc 0.84, time 0.26s
+    training batch 101/308: acc 0.91, time 0.26s
+    training batch 151/308: acc 0.94, time 0.26s
+    training batch 201/308: acc 0.91, time 0.26s
+    training batch 251/308: acc 0.84, time 0.26s
+    training batch 301/308: acc 0.91, time 0.26s
++=> Epoch  21: Accuracy 0.9067, Loss 135.32, Time 80.47s
+==> Test Epoch 21
+    testing batch 1/78: acc 0.94, time 0.23s
+    testing batch 51/78: acc 0.84, time 0.13s
+++> Test Epoch  21: Accuracy 0.8614 (2126/2468), Time 10.27s
+==> Train Epoch 22
+    training batch 1/308: acc 0.94, time 0.36s
+    training batch 51/308: acc 0.97, time 0.26s
+    training batch 101/308: acc 0.91, time 0.26s
+    training batch 151/308: acc 0.91, time 0.26s
+    training batch 201/308: acc 0.84, time 0.26s
+    training batch 251/308: acc 0.94, time 0.26s
+    training batch 301/308: acc 0.97, time 0.26s
++=> Epoch  22: Accuracy 0.9042, Loss 136.28, Time 80.46s
+==> Test Epoch 22
+    testing batch 1/78: acc 0.88, time 0.22s
+    testing batch 51/78: acc 0.94, time 0.13s
+++> Test Epoch  22: Accuracy 0.8663 (2138/2468), Time 10.25s
+==> Train Epoch 23
+    training batch 1/308: acc 1.00, time 0.34s
+    training batch 51/308: acc 0.97, time 0.26s
+    training batch 101/308: acc 0.94, time 0.26s
+    training batch 151/308: acc 0.94, time 0.26s
+    training batch 201/308: acc 0.84, time 0.26s
+    training batch 251/308: acc 0.97, time 0.26s
+    training batch 301/308: acc 0.84, time 0.26s
++=> Epoch  23: Accuracy 0.9056, Loss 134.49, Time 80.40s
+==> Test Epoch 23
+    testing batch 1/78: acc 0.91, time 0.24s
+    testing batch 51/78: acc 0.81, time 0.13s
+++> Test Epoch  23: Accuracy 0.8517 (2102/2468), Time 10.26s
+==> Train Epoch 24
+    training batch 1/308: acc 1.00, time 0.36s
+    training batch 51/308: acc 0.91, time 0.26s
+    training batch 101/308: acc 0.94, time 0.26s
+    training batch 151/308: acc 0.97, time 0.26s
+    training batch 201/308: acc 0.88, time 0.26s
+    training batch 251/308: acc 0.97, time 0.26s
+    training batch 301/308: acc 0.91, time 0.26s
++=> Epoch  24: Accuracy 0.9086, Loss 131.24, Time 80.42s
+==> Test Epoch 24
+    testing batch 1/78: acc 0.88, time 0.34s
+    testing batch 51/78: acc 0.81, time 0.13s
+++> Test Epoch  24: Accuracy 0.8566 (2114/2468), Time 10.37s
+==> Train Epoch 25
+    training batch 1/308: acc 0.94, time 0.34s
+    training batch 51/308: acc 0.97, time 0.26s
+    training batch 101/308: acc 0.88, time 0.26s
+    training batch 151/308: acc 0.88, time 0.26s
+    training batch 201/308: acc 0.94, time 0.26s
+    training batch 251/308: acc 0.94, time 0.26s
+    training batch 301/308: acc 0.81, time 0.26s
++=> Epoch  25: Accuracy 0.9211, Loss 123.01, Time 80.43s
+==> Test Epoch 25
+    testing batch 1/78: acc 0.91, time 0.24s
+    testing batch 51/78: acc 0.88, time 0.13s
+++> Test Epoch  25: Accuracy 0.8699 (2147/2468), Time 10.26s
+==> Train Epoch 26
+    training batch 1/308: acc 0.97, time 0.36s
+    training batch 51/308: acc 0.94, time 0.26s
+    training batch 101/308: acc 0.94, time 0.26s
+    training batch 151/308: acc 0.84, time 0.26s
+    training batch 201/308: acc 0.94, time 0.26s
+    training batch 251/308: acc 0.88, time 0.26s
+    training batch 301/308: acc 0.97, time 0.26s
++=> Epoch  26: Accuracy 0.9184, Loss 120.25, Time 80.41s
+==> Test Epoch 26
+    testing batch 1/78: acc 0.84, time 0.21s
+    testing batch 51/78: acc 0.94, time 0.13s
+++> Test Epoch  26: Accuracy 0.8618 (2127/2468), Time 10.23s
+==> Train Epoch 27
+    training batch 1/308: acc 0.91, time 0.34s
+    training batch 51/308: acc 0.81, time 0.26s
+    training batch 101/308: acc 0.94, time 0.26s
+    training batch 151/308: acc 0.84, time 0.26s
+    training batch 201/308: acc 0.91, time 0.26s
+    training batch 251/308: acc 0.91, time 0.26s
+    training batch 301/308: acc 0.94, time 0.26s
++=> Epoch  27: Accuracy 0.9183, Loss 118.88, Time 80.52s
+==> Test Epoch 27
+    testing batch 1/78: acc 0.84, time 0.27s
+    testing batch 51/78: acc 0.88, time 0.13s
+++> Test Epoch  27: Accuracy 0.8651 (2135/2468), Time 10.30s
+==> Train Epoch 28
+    training batch 1/308: acc 0.97, time 0.40s
+    training batch 51/308: acc 0.94, time 0.26s
+    training batch 101/308: acc 0.97, time 0.26s
+    training batch 151/308: acc 0.97, time 0.26s
+    training batch 201/308: acc 0.97, time 0.26s
+    training batch 251/308: acc 0.88, time 0.26s
+    training batch 301/308: acc 0.94, time 0.26s
++=> Epoch  28: Accuracy 0.9198, Loss 118.53, Time 80.53s
+==> Test Epoch 28
+    testing batch 1/78: acc 0.84, time 0.21s
+    testing batch 51/78: acc 0.91, time 0.13s
+++> Test Epoch  28: Accuracy 0.8610 (2125/2468), Time 10.23s
+==> Train Epoch 29
+    training batch 1/308: acc 0.97, time 0.34s
+    training batch 51/308: acc 0.84, time 0.26s
+    training batch 101/308: acc 0.91, time 0.26s
+    training batch 151/308: acc 0.94, time 0.26s
+    training batch 201/308: acc 0.91, time 0.26s
+    training batch 251/308: acc 0.91, time 0.26s
+    training batch 301/308: acc 0.88, time 0.26s
++=> Epoch  29: Accuracy 0.9178, Loss 117.32, Time 80.47s
+==> Test Epoch 29
+    testing batch 1/78: acc 0.88, time 0.25s
+    testing batch 51/78: acc 0.75, time 0.13s
+++> Test Epoch  29: Accuracy 0.8651 (2135/2468), Time 10.28s
+==> Train Epoch 30
+    training batch 1/308: acc 0.94, time 0.34s
+    training batch 51/308: acc 0.88, time 0.26s
+    training batch 101/308: acc 1.00, time 0.26s
+    training batch 151/308: acc 0.91, time 0.26s
+    training batch 201/308: acc 0.97, time 0.26s
+    training batch 251/308: acc 1.00, time 0.26s
+    training batch 301/308: acc 0.94, time 0.26s
++=> Epoch  30: Accuracy 0.9273, Loss 111.27, Time 80.39s
+==> Test Epoch 30
+    testing batch 1/78: acc 0.78, time 0.20s
+    testing batch 51/78: acc 0.84, time 0.13s
+++> Test Epoch  30: Accuracy 0.8643 (2133/2468), Time 10.22s
+==> Train Epoch 31
+    training batch 1/308: acc 0.91, time 0.34s
+    training batch 51/308: acc 0.91, time 0.26s
+    training batch 101/308: acc 0.91, time 0.26s
+    training batch 151/308: acc 0.94, time 0.26s
+    training batch 201/308: acc 0.94, time 0.26s
+    training batch 251/308: acc 0.94, time 0.26s
+    training batch 301/308: acc 1.00, time 0.26s
++=> Epoch  31: Accuracy 0.9277, Loss 108.02, Time 80.41s
+==> Test Epoch 31
+    testing batch 1/78: acc 0.81, time 0.22s
+    testing batch 51/78: acc 0.75, time 0.13s
+++> Test Epoch  31: Accuracy 0.8630 (2130/2468), Time 10.24s
+==> Train Epoch 32
+    training batch 1/308: acc 0.94, time 0.33s
+    training batch 51/308: acc 0.97, time 0.26s
+    training batch 101/308: acc 0.97, time 0.26s
+    training batch 151/308: acc 0.91, time 0.26s
+    training batch 201/308: acc 0.88, time 0.26s
+    training batch 251/308: acc 0.94, time 0.26s
+    training batch 301/308: acc 0.97, time 0.26s
++=> Epoch  32: Accuracy 0.9304, Loss 105.51, Time 80.36s
+==> Test Epoch 32
+    testing batch 1/78: acc 0.91, time 0.22s
+    testing batch 51/78: acc 0.84, time 0.13s
+++> Test Epoch  32: Accuracy 0.8707 (2149/2468), Time 10.24s
+==> Train Epoch 33
+    training batch 1/308: acc 0.94, time 0.34s
+    training batch 51/308: acc 0.94, time 0.26s
+    training batch 101/308: acc 0.91, time 0.26s
+    training batch 151/308: acc 0.88, time 0.26s
+    training batch 201/308: acc 0.94, time 0.26s
+    training batch 251/308: acc 0.88, time 0.26s
+    training batch 301/308: acc 0.94, time 0.26s
++=> Epoch  33: Accuracy 0.9303, Loss 105.69, Time 80.49s
+==> Test Epoch 33
+    testing batch 1/78: acc 0.88, time 0.26s
+    testing batch 51/78: acc 0.84, time 0.13s
+++> Test Epoch  33: Accuracy 0.8582 (2118/2468), Time 10.29s
+==> Train Epoch 34
+    training batch 1/308: acc 0.78, time 0.37s
+    training batch 51/308: acc 0.84, time 0.26s
+    training batch 101/308: acc 0.91, time 0.26s
+    training batch 151/308: acc 0.97, time 0.26s
+    training batch 201/308: acc 0.91, time 0.26s
+    training batch 251/308: acc 0.88, time 0.26s
+    training batch 301/308: acc 0.91, time 0.26s
++=> Epoch  34: Accuracy 0.9299, Loss 103.99, Time 80.42s
+==> Test Epoch 34
+    testing batch 1/78: acc 0.91, time 0.23s
+    testing batch 51/78: acc 0.81, time 0.13s
+++> Test Epoch  34: Accuracy 0.8400 (2073/2468), Time 10.26s
+==> Train Epoch 35
+    training batch 1/308: acc 0.94, time 0.34s
+    training batch 51/308: acc 0.91, time 0.26s
+    training batch 101/308: acc 0.94, time 0.26s
+    training batch 151/308: acc 0.88, time 0.26s
+    training batch 201/308: acc 0.97, time 0.26s
+    training batch 251/308: acc 0.88, time 0.26s
+    training batch 301/308: acc 0.84, time 0.26s
++=> Epoch  35: Accuracy 0.9373, Loss 98.21, Time 80.44s
+==> Test Epoch 35
+    testing batch 1/78: acc 0.88, time 0.26s
+    testing batch 51/78: acc 0.78, time 0.13s
+++> Test Epoch  35: Accuracy 0.8760 (2162/2468), Time 10.30s
+==> Train Epoch 36
+    training batch 1/308: acc 1.00, time 0.39s
+    training batch 51/308: acc 0.94, time 0.26s
+    training batch 101/308: acc 1.00, time 0.26s
+    training batch 151/308: acc 0.94, time 0.26s
+    training batch 201/308: acc 0.91, time 0.26s
+    training batch 251/308: acc 1.00, time 0.26s
+    training batch 301/308: acc 1.00, time 0.26s
++=> Epoch  36: Accuracy 0.9363, Loss 96.78, Time 80.49s
+==> Test Epoch 36
+    testing batch 1/78: acc 0.88, time 0.22s
+    testing batch 51/78: acc 0.81, time 0.13s
+++> Test Epoch  36: Accuracy 0.8894 (2195/2468), Time 10.24s
+==> Train Epoch 37
+    training batch 1/308: acc 0.94, time 0.36s
+    training batch 51/308: acc 0.94, time 0.26s
+    training batch 101/308: acc 0.88, time 0.26s
+    training batch 151/308: acc 0.94, time 0.26s
+    training batch 201/308: acc 0.94, time 0.26s
+    training batch 251/308: acc 0.94, time 0.26s
+    training batch 301/308: acc 0.91, time 0.26s
++=> Epoch  37: Accuracy 0.9394, Loss 92.69, Time 80.43s
+==> Test Epoch 37
+    testing batch 1/78: acc 0.84, time 0.23s
+    testing batch 51/78: acc 0.91, time 0.13s
+++> Test Epoch  37: Accuracy 0.8991 (2219/2468), Time 10.26s
+==> Train Epoch 38
+    training batch 1/308: acc 0.94, time 0.34s
+    training batch 51/308: acc 0.91, time 0.26s
+    training batch 101/308: acc 0.88, time 0.26s
+    training batch 151/308: acc 0.88, time 0.26s
+    training batch 201/308: acc 0.88, time 0.26s
+    training batch 251/308: acc 0.84, time 0.26s
+    training batch 301/308: acc 0.97, time 0.26s
++=> Epoch  38: Accuracy 0.9430, Loss 92.81, Time 80.37s
+==> Test Epoch 38
+    testing batch 1/78: acc 0.81, time 0.23s
+    testing batch 51/78: acc 0.88, time 0.13s
+++> Test Epoch  38: Accuracy 0.9056 (2235/2468), Time 10.25s
+==> Train Epoch 39
+    training batch 1/308: acc 0.97, time 0.36s
+    training batch 51/308: acc 0.91, time 0.26s
+    training batch 101/308: acc 0.94, time 0.26s
+    training batch 151/308: acc 1.00, time 0.26s
+    training batch 201/308: acc 0.97, time 0.26s
+    training batch 251/308: acc 1.00, time 0.26s
+    training batch 301/308: acc 0.94, time 0.26s
++=> Epoch  39: Accuracy 0.9433, Loss 89.43, Time 80.41s
+==> Test Epoch 39
+    testing batch 1/78: acc 0.94, time 0.21s
+    testing batch 51/78: acc 0.94, time 0.13s
+++> Test Epoch  39: Accuracy 0.9048 (2233/2468), Time 10.23s
+==> Train Epoch 40
+    training batch 1/308: acc 1.00, time 0.34s
+    training batch 51/308: acc 0.97, time 0.26s
+    training batch 101/308: acc 0.88, time 0.26s
+    training batch 151/308: acc 0.97, time 0.26s
+    training batch 201/308: acc 0.97, time 0.26s
+    training batch 251/308: acc 0.97, time 0.26s
+    training batch 301/308: acc 0.91, time 0.26s
++=> Epoch  40: Accuracy 0.9478, Loss 86.22, Time 80.40s
+==> Test Epoch 40
+    testing batch 1/78: acc 0.84, time 0.22s
+    testing batch 51/78: acc 0.94, time 0.13s
+++> Test Epoch  40: Accuracy 0.9129 (2253/2468), Time 10.25s
+==> Train Epoch 41
+    training batch 1/308: acc 0.94, time 0.35s
+    training batch 51/308: acc 0.97, time 0.26s
+    training batch 101/308: acc 0.97, time 0.26s
+    training batch 151/308: acc 0.94, time 0.26s
+    training batch 201/308: acc 0.97, time 0.26s
+    training batch 251/308: acc 0.94, time 0.26s
+    training batch 301/308: acc 0.97, time 0.26s
++=> Epoch  41: Accuracy 0.9503, Loss 82.95, Time 80.40s
+==> Test Epoch 41
+    testing batch 1/78: acc 0.84, time 0.22s
+    testing batch 51/78: acc 0.91, time 0.13s
+++> Test Epoch  41: Accuracy 0.9100 (2246/2468), Time 10.24s
+==> Train Epoch 42
+    training batch 1/308: acc 1.00, time 0.35s
+    training batch 51/308: acc 0.91, time 0.26s
+    training batch 101/308: acc 0.97, time 0.26s
+    training batch 151/308: acc 0.97, time 0.26s
+    training batch 201/308: acc 0.94, time 0.26s
+    training batch 251/308: acc 0.97, time 0.26s
+    training batch 301/308: acc 0.94, time 0.26s
++=> Epoch  42: Accuracy 0.9525, Loss 81.61, Time 80.39s
+==> Test Epoch 42
+    testing batch 1/78: acc 0.88, time 0.36s
+    testing batch 51/78: acc 0.97, time 0.13s
+++> Test Epoch  42: Accuracy 0.9194 (2269/2468), Time 10.42s
+==> Train Epoch 43
+    training batch 1/308: acc 0.94, time 0.38s
+    training batch 51/308: acc 0.84, time 0.26s
+    training batch 101/308: acc 0.94, time 0.26s
+    training batch 151/308: acc 1.00, time 0.26s
+    training batch 201/308: acc 0.97, time 0.26s
+    training batch 251/308: acc 0.91, time 0.26s
+    training batch 301/308: acc 0.94, time 0.26s
++=> Epoch  43: Accuracy 0.9536, Loss 80.00, Time 80.57s
+==> Test Epoch 43
+    testing batch 1/78: acc 0.91, time 0.26s
+    testing batch 51/78: acc 0.97, time 0.13s
+++> Test Epoch  43: Accuracy 0.9109 (2248/2468), Time 10.29s
+==> Train Epoch 44
+    training batch 1/308: acc 1.00, time 0.35s
+    training batch 51/308: acc 0.94, time 0.26s
+    training batch 101/308: acc 1.00, time 0.26s
+    training batch 151/308: acc 0.91, time 0.26s
+    training batch 201/308: acc 0.97, time 0.26s
+    training batch 251/308: acc 1.00, time 0.26s
+    training batch 301/308: acc 0.97, time 0.26s
++=> Epoch  44: Accuracy 0.9547, Loss 79.27, Time 80.40s
+==> Test Epoch 44
+    testing batch 1/78: acc 0.88, time 0.21s
+    testing batch 51/78: acc 0.94, time 0.13s
+++> Test Epoch  44: Accuracy 0.9080 (2241/2468), Time 10.23s
+==> Train Epoch 45
+    training batch 1/308: acc 0.91, time 0.36s
+    training batch 51/308: acc 1.00, time 0.26s
+    training batch 101/308: acc 0.97, time 0.26s
+    training batch 151/308: acc 0.97, time 0.26s
+    training batch 201/308: acc 0.94, time 0.26s
+    training batch 251/308: acc 0.94, time 0.26s
+    training batch 301/308: acc 1.00, time 0.26s
++=> Epoch  45: Accuracy 0.9575, Loss 75.42, Time 80.44s
+==> Test Epoch 45
+    testing batch 1/78: acc 0.91, time 0.23s
+    testing batch 51/78: acc 0.91, time 0.13s
+++> Test Epoch  45: Accuracy 0.9096 (2245/2468), Time 10.26s
+==> Train Epoch 46
+    training batch 1/308: acc 0.97, time 0.34s
+    training batch 51/308: acc 0.97, time 0.26s
+    training batch 101/308: acc 1.00, time 0.26s
+    training batch 151/308: acc 0.97, time 0.26s
+    training batch 201/308: acc 0.97, time 0.26s
+    training batch 251/308: acc 0.97, time 0.26s
+    training batch 301/308: acc 0.94, time 0.26s
++=> Epoch  46: Accuracy 0.9548, Loss 75.52, Time 80.41s
+==> Test Epoch 46
+    testing batch 1/78: acc 0.94, time 0.23s
+    testing batch 51/78: acc 0.88, time 0.13s
+++> Test Epoch  46: Accuracy 0.9145 (2257/2468), Time 10.27s
+==> Train Epoch 47
+    training batch 1/308: acc 0.97, time 0.36s
+    training batch 51/308: acc 0.94, time 0.26s
+    training batch 101/308: acc 0.97, time 0.26s
+    training batch 151/308: acc 0.94, time 0.26s
+    training batch 201/308: acc 0.97, time 0.26s
+    training batch 251/308: acc 0.97, time 0.26s
+    training batch 301/308: acc 1.00, time 0.26s
++=> Epoch  47: Accuracy 0.9578, Loss 73.67, Time 80.60s
+==> Test Epoch 47
+    testing batch 1/78: acc 0.94, time 0.24s
+    testing batch 51/78: acc 0.88, time 0.13s
+++> Test Epoch  47: Accuracy 0.9125 (2252/2468), Time 10.28s
+==> Train Epoch 48
+    training batch 1/308: acc 1.00, time 0.38s
+    training batch 51/308: acc 1.00, time 0.26s
+    training batch 101/308: acc 0.91, time 0.26s
+    training batch 151/308: acc 0.97, time 0.26s
+    training batch 201/308: acc 1.00, time 0.26s
+    training batch 251/308: acc 0.91, time 0.26s
+    training batch 301/308: acc 0.88, time 0.26s
++=> Epoch  48: Accuracy 0.9572, Loss 75.32, Time 80.44s
+==> Test Epoch 48
+    testing batch 1/78: acc 0.88, time 0.22s
+    testing batch 51/78: acc 0.81, time 0.13s
+++> Test Epoch  48: Accuracy 0.9121 (2251/2468), Time 10.25s
+==> Train Epoch 49
+    training batch 1/308: acc 0.97, time 0.34s
+    training batch 51/308: acc 1.00, time 0.26s
+    training batch 101/308: acc 0.94, time 0.26s
+    training batch 151/308: acc 1.00, time 0.26s
+    training batch 201/308: acc 0.94, time 0.26s
+    training batch 251/308: acc 0.94, time 0.26s
+    training batch 301/308: acc 0.97, time 0.26s
++=> Epoch  49: Accuracy 0.9572, Loss 72.44, Time 80.45s
+==> Test Epoch 49
+    testing batch 1/78: acc 0.97, time 0.21s
+    testing batch 51/78: acc 0.97, time 0.13s
+++> Test Epoch  49: Accuracy 0.9202 (2271/2468), Time 10.25s
+==> Train Epoch 50
+    training batch 1/308: acc 1.00, time 0.39s
+    training batch 51/308: acc 0.97, time 0.26s
+    training batch 101/308: acc 0.94, time 0.26s
+    training batch 151/308: acc 0.91, time 0.26s
+    training batch 201/308: acc 1.00, time 0.26s
+    training batch 251/308: acc 1.00, time 0.26s
+    training batch 301/308: acc 0.97, time 0.26s
++=> Epoch  50: Accuracy 0.9639, Loss 67.84, Time 80.59s
+==> Test Epoch 50
+    testing batch 1/78: acc 0.97, time 0.26s
+    testing batch 51/78: acc 0.88, time 0.13s
+++> Test Epoch  50: Accuracy 0.9186 (2267/2468), Time 10.28s
+==> Train Epoch 51
+    training batch 1/308: acc 1.00, time 0.51s
+    training batch 51/308: acc 0.94, time 0.26s
+    training batch 101/308: acc 0.97, time 0.26s
+    training batch 151/308: acc 0.94, time 0.26s
+    training batch 201/308: acc 0.94, time 0.26s
+    training batch 251/308: acc 0.94, time 0.26s
+    training batch 301/308: acc 0.94, time 0.26s
++=> Epoch  51: Accuracy 0.9604, Loss 69.27, Time 80.58s
+==> Test Epoch 51
+    testing batch 1/78: acc 0.97, time 0.36s
+    testing batch 51/78: acc 0.97, time 0.13s
+++> Test Epoch  51: Accuracy 0.9242 (2281/2468), Time 10.40s
+==> Train Epoch 52
+    training batch 1/308: acc 0.94, time 0.36s
+    training batch 51/308: acc 0.97, time 0.26s
+    training batch 101/308: acc 0.97, time 0.26s
+    training batch 151/308: acc 0.97, time 0.26s
+    training batch 201/308: acc 0.97, time 0.26s
+    training batch 251/308: acc 0.97, time 0.26s
+    training batch 301/308: acc 0.91, time 0.26s
++=> Epoch  52: Accuracy 0.9630, Loss 67.14, Time 80.43s
+==> Test Epoch 52
+    testing batch 1/78: acc 0.91, time 0.21s
+    testing batch 51/78: acc 0.94, time 0.13s
+++> Test Epoch  52: Accuracy 0.9169 (2263/2468), Time 10.23s
+==> Train Epoch 53
+    training batch 1/308: acc 0.91, time 0.34s
+    training batch 51/308: acc 0.97, time 0.26s
+    training batch 101/308: acc 0.91, time 0.26s
+    training batch 151/308: acc 1.00, time 0.26s
+    training batch 201/308: acc 0.91, time 0.26s
+    training batch 251/308: acc 1.00, time 0.26s
+    training batch 301/308: acc 0.91, time 0.26s
++=> Epoch  53: Accuracy 0.9640, Loss 65.48, Time 80.39s
+==> Test Epoch 53
+    testing batch 1/78: acc 0.88, time 0.21s
+    testing batch 51/78: acc 0.94, time 0.13s
+++> Test Epoch  53: Accuracy 0.9145 (2257/2468), Time 10.23s
+==> Train Epoch 54
+    training batch 1/308: acc 0.97, time 0.35s
+    training batch 51/308: acc 0.94, time 0.26s
+    training batch 101/308: acc 0.88, time 0.26s
+    training batch 151/308: acc 1.00, time 0.26s
+    training batch 201/308: acc 0.94, time 0.26s
+    training batch 251/308: acc 0.97, time 0.26s
+    training batch 301/308: acc 1.00, time 0.26s
++=> Epoch  54: Accuracy 0.9622, Loss 66.44, Time 80.44s
+==> Test Epoch 54
+    testing batch 1/78: acc 0.97, time 0.25s
+    testing batch 51/78: acc 1.00, time 0.13s
+++> Test Epoch  54: Accuracy 0.9157 (2260/2468), Time 10.28s
+==> Train Epoch 55
+    training batch 1/308: acc 0.97, time 0.34s
+    training batch 51/308: acc 1.00, time 0.26s
+    training batch 101/308: acc 0.97, time 0.26s
+    training batch 151/308: acc 0.97, time 0.26s
+    training batch 201/308: acc 0.97, time 0.26s
+    training batch 251/308: acc 0.97, time 0.26s
+    training batch 301/308: acc 1.00, time 0.26s
++=> Epoch  55: Accuracy 0.9647, Loss 64.98, Time 80.38s
+==> Test Epoch 55
+    testing batch 1/78: acc 0.97, time 0.25s
+    testing batch 51/78: acc 0.94, time 0.13s
+++> Test Epoch  55: Accuracy 0.9157 (2260/2468), Time 10.28s
+==> Train Epoch 56
+    training batch 1/308: acc 0.94, time 0.35s
+    training batch 51/308: acc 1.00, time 0.26s
+    training batch 101/308: acc 0.97, time 0.26s
+    training batch 151/308: acc 0.94, time 0.26s
+    training batch 201/308: acc 0.94, time 0.26s
+    training batch 251/308: acc 0.97, time 0.26s
+    training batch 301/308: acc 0.97, time 0.26s
++=> Epoch  56: Accuracy 0.9648, Loss 63.85, Time 80.62s
+==> Test Epoch 56
+    testing batch 1/78: acc 0.97, time 0.28s
+    testing batch 51/78: acc 0.97, time 0.13s
+++> Test Epoch  56: Accuracy 0.9186 (2267/2468), Time 10.32s
+==> Train Epoch 57
+    training batch 1/308: acc 0.97, time 0.39s
+    training batch 51/308: acc 0.97, time 0.26s
+    training batch 101/308: acc 0.97, time 0.26s
+    training batch 151/308: acc 1.00, time 0.26s
+    training batch 201/308: acc 0.97, time 0.26s
+    training batch 251/308: acc 1.00, time 0.26s
+    training batch 301/308: acc 0.94, time 0.26s
++=> Epoch  57: Accuracy 0.9669, Loss 61.96, Time 80.58s
+==> Test Epoch 57
+    testing batch 1/78: acc 0.94, time 0.23s
+    testing batch 51/78: acc 0.84, time 0.13s
+++> Test Epoch  57: Accuracy 0.9125 (2252/2468), Time 10.26s
+==> Train Epoch 58
+    training batch 1/308: acc 1.00, time 0.34s
+    training batch 51/308: acc 1.00, time 0.26s
+    training batch 101/308: acc 1.00, time 0.26s
+    training batch 151/308: acc 1.00, time 0.26s
+    training batch 201/308: acc 0.97, time 0.26s
+    training batch 251/308: acc 0.91, time 0.26s
+    training batch 301/308: acc 1.00, time 0.26s
++=> Epoch  58: Accuracy 0.9672, Loss 60.41, Time 80.39s
+==> Test Epoch 58
+    testing batch 1/78: acc 0.91, time 0.23s
+    testing batch 51/78: acc 0.91, time 0.13s
+++> Test Epoch  58: Accuracy 0.9161 (2261/2468), Time 10.25s
+==> Train Epoch 59
+    training batch 1/308: acc 1.00, time 0.36s
+    training batch 51/308: acc 0.97, time 0.26s
+    training batch 101/308: acc 0.97, time 0.26s
+    training batch 151/308: acc 0.91, time 0.26s
+    training batch 201/308: acc 1.00, time 0.26s
+    training batch 251/308: acc 1.00, time 0.26s
+    training batch 301/308: acc 0.97, time 0.26s
++=> Epoch  59: Accuracy 0.9669, Loss 60.73, Time 80.46s
+==> Test Epoch 59
+    testing batch 1/78: acc 1.00, time 0.23s
+    testing batch 51/78: acc 1.00, time 0.13s
+++> Test Epoch  59: Accuracy 0.9182 (2266/2468), Time 10.25s
+==> Train Epoch 60
+    training batch 1/308: acc 1.00, time 0.36s
+    training batch 51/308: acc 1.00, time 0.26s
+    training batch 101/308: acc 1.00, time 0.26s
+    training batch 151/308: acc 1.00, time 0.26s
+    training batch 201/308: acc 0.94, time 0.26s
+    training batch 251/308: acc 0.97, time 0.26s
+    training batch 301/308: acc 0.97, time 0.26s
++=> Epoch  60: Accuracy 0.9659, Loss 59.60, Time 80.44s
+==> Test Epoch 60
+    testing batch 1/78: acc 0.91, time 0.21s
+    testing batch 51/78: acc 1.00, time 0.13s
+++> Test Epoch  60: Accuracy 0.9202 (2271/2468), Time 10.23s
+==> Train Epoch 61
+    training batch 1/308: acc 0.97, time 0.47s
+    training batch 51/308: acc 1.00, time 0.26s
+    training batch 101/308: acc 0.97, time 0.26s
+    training batch 151/308: acc 0.97, time 0.26s
+    training batch 201/308: acc 0.97, time 0.26s
+    training batch 251/308: acc 1.00, time 0.26s
+    training batch 301/308: acc 1.00, time 0.26s
++=> Epoch  61: Accuracy 0.9668, Loss 59.88, Time 80.52s
+==> Test Epoch 61
+    testing batch 1/78: acc 0.91, time 0.23s
+    testing batch 51/78: acc 0.84, time 0.13s
+++> Test Epoch  61: Accuracy 0.9121 (2251/2468), Time 10.25s
+==> Train Epoch 62
+    training batch 1/308: acc 0.97, time 0.36s
+    training batch 51/308: acc 1.00, time 0.26s
+    training batch 101/308: acc 1.00, time 0.26s
+    training batch 151/308: acc 1.00, time 0.26s
+    training batch 201/308: acc 0.94, time 0.26s
+    training batch 251/308: acc 1.00, time 0.26s
+    training batch 301/308: acc 1.00, time 0.26s
++=> Epoch  62: Accuracy 0.9690, Loss 57.43, Time 80.42s
+==> Test Epoch 62
+    testing batch 1/78: acc 1.00, time 0.21s
+    testing batch 51/78: acc 0.91, time 0.13s
+++> Test Epoch  62: Accuracy 0.9137 (2255/2468), Time 10.23s
+==> Train Epoch 63
+    training batch 1/308: acc 0.97, time 0.36s
+    training batch 51/308: acc 1.00, time 0.26s
+    training batch 101/308: acc 0.97, time 0.26s
+    training batch 151/308: acc 0.97, time 0.26s
+    training batch 201/308: acc 0.97, time 0.26s
+    training batch 251/308: acc 1.00, time 0.26s
+    training batch 301/308: acc 1.00, time 0.26s
++=> Epoch  63: Accuracy 0.9700, Loss 57.39, Time 80.43s
+==> Test Epoch 63
+    testing batch 1/78: acc 0.91, time 0.21s
+    testing batch 51/78: acc 0.94, time 0.13s
+++> Test Epoch  63: Accuracy 0.9206 (2272/2468), Time 10.23s
